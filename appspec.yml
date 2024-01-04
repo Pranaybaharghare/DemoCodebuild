@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 
 files:
-  - source: /
-    destination: /home/ec2-user/server
+  source: /deployment.war  # Path to your WAR file in the CodeBuild artifact
+    destination: /usr/local/tomcat/webapps/
 
 permissions:
   - object: /
